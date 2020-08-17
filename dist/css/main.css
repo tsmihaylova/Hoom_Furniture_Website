@@ -85,7 +85,7 @@ nav {
       color: #9f9f9f; }
 
 .hero {
-  background: url(/dist/img/1_1.jpg) center center/cover;
+  background: url(/dist/img/1-1.jpg) center center/cover;
   max-width: 1280px;
   height: 650px;
   padding-bottom: 20px;
@@ -132,7 +132,7 @@ nav {
         color: #414141; }
 
 .section2 {
-  background: url(/dist/img/2_1.jpg) center center/cover;
+  background: url(/dist/img/2-1.jpg) center center/cover;
   max-width: 1280px;
   height: 480px;
   margin: 0 auto;
