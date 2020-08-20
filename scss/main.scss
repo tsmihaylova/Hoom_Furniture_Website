@@ -1,6 +1,5 @@
 @import "config";
 
-// General Styles
 * {
   margin: 0;
   padding: 0;
@@ -31,22 +30,18 @@ header {
 h1 {
   font-size: 2.6rem;
 }
-
 h2 {
  font-size: 2.1rem;
 }
 h3 {
   font-size: 1.6rem;
 }
-
 .box1 {
   flex-grow: 1;
 }
-
 .box2 {
   flex-grow: 5;
 }
-
 .row1 {
   display: flex;
 }
@@ -65,18 +60,16 @@ nav {
   }
 
   a {
-      color: #fff;
-      text-decoration: none;
-      transition: all 0.4s;
-
-      &:hover {
-        color: $secondary-color;
-      }
-
-      .icons {
-        padding: 0 5px;
-      }
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.4s;
+    &:hover {
+      color: $secondary-color;
     }
+    .icons {
+      padding: 0 5px;
+    }
+  }
 }
 
 .search-box {
@@ -86,19 +79,18 @@ nav {
   align-items: center;
   position: relative;
   
-  .search-field {
-  width: 100%;
-  height: 25px;
-  border: none;
-  background: $light-color;
-  box-sizing: border-box;
-  border-radius: 20px;
-  padding-left: 10px;
-
+    .search-field {
+    width: 100%;
+    height: 25px;
+    border: none;
+    background: $light-color;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding-left: 10px;
     &:focus {
       outline: none;
     }
-  }
+   }
 
   a {
       display: inline;
@@ -107,7 +99,6 @@ nav {
       right: 10px;
       color: $dark-color;
       transition: all 0.4s;
-
       &:hover {
         color: $medium-color;
       }
@@ -116,13 +107,15 @@ nav {
 
 // Section 1
 .hero {
+  .nav-box {
+    display: none;
+  }
   background: url(/dist/img/1-1.jpg) center center/cover ;
   max-width: $website-width;
   height: 650px;
   padding-bottom: 20px;
   margin: 120px auto 20px auto;
   position: relative;
-  // box-sizing: border-box;
 
   h1 {
     color: #000;
@@ -211,7 +204,6 @@ nav {
     &:hover {
       background-color: $dark-color;
     }
-    
     &-text {
       color: #fff;
       text-decoration: none;
@@ -222,7 +214,6 @@ nav {
       padding-bottom: 0.3rem;
       line-height: 2rem;
     }
-    
     &-icon {
       padding-right: 20px;
     }
@@ -238,17 +229,14 @@ nav {
   &-container {
     max-width: $website-width;
     display: flex;
-    flex-wrap: 1;
     margin-bottom: -4px;
-    
+
     .section3-image {
       box-sizing: border-box;
-      
       &1 , &2 {
         margin-right: 10px;
       }
     }
-    
     img {
       max-width: 100%;
       max-height: 480px;
@@ -258,7 +246,6 @@ nav {
   .nav-box {
     background-color: $main-color;
     padding: 20px 0px;
-    margin-bottom: 20px;;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -268,7 +255,6 @@ nav {
     &:hover {
       background-color: $dark-color;
     }
-    
     &-text {
       color: #fff;
       text-decoration: none;
@@ -277,9 +263,7 @@ nav {
       font-weight: 700;
       margin-left: 20px;
       padding-bottom: 0.3rem;
-      // line-height: 2rem;
     }
-    
     &-icon {
       padding-right: 20px;
       color: #fff;
@@ -291,7 +275,7 @@ nav {
 .section4 {
   max-width: $website-width;
   max-height: 480px;
-  margin: 60px auto;
+  margin: 60px auto 0 auto;
 
   &-container {
     max-width: $website-width;
@@ -301,12 +285,11 @@ nav {
     
     .section4-image {
       box-sizing: border-box;
-      
       &1 , &2, &3 {
         margin-right: 10px;
       }
     }
-    
+
     img {
       max-width: 100%;
       max-height: 480px;
@@ -316,7 +299,7 @@ nav {
   .nav-box {
     background-color: $main-color;
     padding: 20px 0px;
-    margin-bottom: 20px;;
+    // margin-bottom: 20px;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -326,7 +309,6 @@ nav {
     &:hover {
       background-color: $dark-color;
     }
-    
     &-text {
       color: #fff;
       text-decoration: none;
@@ -336,7 +318,6 @@ nav {
       margin-left: 20px;
       padding-bottom: 0.3rem;
     }
-    
     &-icon {
       padding-right: 20px;
       color: #fff;
@@ -363,13 +344,12 @@ nav {
     background: $light-color;
     border-radius: 3px;
     padding-left: 10px;
-  
     &:focus {
       outline: none;
     }
   }
 
-  .btn-sunscribe {
+  .btn-subscribe {
     padding: 8px 15px;
     font-size: 0.8rem;
     text-transform: uppercase;
@@ -381,7 +361,6 @@ nav {
     border: none;
     outline: none;
     transition: all 0.4s;
-
     &:hover {
       background-color: $main-color;
     }
@@ -418,12 +397,10 @@ footer {
     text-decoration: none;
     line-height: 1.8rem;
     padding-right: 4rem;
-
     a {
       color: #fff;
       text-decoration: none;
       transition: all 0.4s;
-
       &:hover {
         color: $medium-color;
       }
@@ -436,20 +413,247 @@ footer {
     margin-top: -80px;
     margin-left: auto;
     gap: 0.7rem;
-    
     a {
       color: #fff;
+      padding-right: 10px;
       transition: all 0.4s;
-
       &:hover {
         color: $medium-color;
       }
     }
-    
     p {
       font-weight: 700;
       font-size: 1.2rem;
       padding-right: 1.2rem;
+    }
+  }
+}
+
+// Responsive
+.mob-container {
+  display: none;
+}
+.mob-herolink {
+  display: none;
+}
+
+// Laptop 
+@media (max-width: 1100px) {
+  header {
+    margin: 0 20px;
+  }
+  .hero {
+    h1 {
+      left: 33%;
+    }
+    h3 {
+        font-size: 1.4rem;
+    }
+  }
+  .section4 {
+    margin-top: 20px;
+  }
+  .newsletter {
+    margin-top: 20px;
+  }
+  footer {
+    gap: 1rem;
+    ul li {
+      padding-right: 1.5rem;
+    }
+    .social {
+      flex-direction: column;
+      padding-top: 80px;
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero h3 {
+      font-size: 1.3rem;
+    }
+}
+
+// Tablet
+@media (max-width: 950px) {
+  .container {
+    min-height: 80px;
+    position: fixed;
+    top: 0;
+  }
+  header {
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .mobile-hide {
+    display: none;
+  }
+  .mob-container {
+    display: block;
+    padding-right: 10px;
+  }
+  .mob-nav {
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+  }
+
+  .hero {
+  background: url(/dist/img/1-mob.jpg) center center/cover ;
+  max-width: $laptop-width;
+  height: 500px;
+  margin: 80px auto 20px auto;
+    .nav-box {
+        background-color: $main-color;
+        padding: 10px 0;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        a, i {
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        font-weight: 700;
+        margin: 0 20px;
+        padding-bottom: 0.3rem;
+      }
+      &-text {
+          border-bottom: solid 3px;
+      }
+    }
+    h1 {
+      font-size: 2rem;
+      top: 35%;
+      left: 43%;
+    }
+    h3 {
+      display: none;
+    }
+    .herolink {
+      display: none;
+    }
+  }
+
+  .section2, .section3, .section4 {
+    max-height: 450px;
+    h2 {
+      font-size: 1.5rem;
+    }
+    h3 {
+      display: none;
+    }
+    .nav-box {
+      padding: 10px 0;
+      a, i {
+        font-size: 1.2rem;
+        line-height: 1.5;
+      }
+    }
+  }
+  .section4 {
+    margin-top: 20px;
+  }
+
+  .mob-newsletter {
+    display: none;
+  }
+  .newsletter {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  }
+
+  footer {
+    flex-direction: column-reverse;
+    height: auto;
+    gap: 0;
+
+    ul {
+      display: none;
+    }
+    .social {
+     margin: auto;
+     padding-top: 0;
+    }
+    .vertical {
+      writing-mode: initial;
+      transform: none;
+      text-align: center;
+      font-size: 1.2rem;
+      border-top: rgba(255, 255, 255, 0.5) 1px solid;
+      padding: 20px 0 0 0;
+    }
+  }
+}
+
+// Mobile
+@media (max-width: 700px) {
+  .logo {
+    margin-left: -30px;
+    transform: scale(0.8);
+  }
+  .hero {
+    height: 460px;
+    h1 {
+      font-size: 1.4rem;
+      left: 40%;
+    }
+  }
+
+  .section2 {
+    height: 400px;
+    h2 {
+      left: 18%;
+    }
+    h3 {
+      display: none;
+    }
+  }
+
+  .section3 {
+    display: block;
+    &-container {
+      height: 250px; 
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+      background: url(/dist/img/3-1.jpg) no-repeat bottom 10% center/cover;
+    }
+    img {
+      display: none;
+    }
+  }
+ 
+  .section4 {
+    display: block;
+    padding: 0 0 10px 0;
+    &-container {
+      height: 250px; 
+      width: 100%;
+      margin: 0 auto;
+      padding: 0;
+      background: url(/dist/img/4-1.jpg) no-repeat bottom 10% center/cover;
+    }
+   img {
+      display: none;
+    }
+  }
+
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    input[type="email"] {
+      width: 240px;
+    }
+    .btn-subscribe {
+      padding: 10px 90px;
     }
   }
 }

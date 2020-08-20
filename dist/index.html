@@ -15,30 +15,24 @@
     <title>Hoom Furniture</title>
   </head>
   <body>
-    <!-- Header -->
 
+    <!-- Header -->
     
       <div class="container">
-
         <header>
         
           <div class="box1">
-
             <div class="logo">
               <img src="img/logo.png" alt="Home" id="logo" />
             </div>
-
           </div>
 
-          <div class="box2">
-
+          <div class="box2 mobile-hide">
             <div class="row1">
-              
                 <div class="search-box">
                   <input type="text" placeholder="Search..." class="search-field"/>
                   <a href="#"><i class="fas fa-search search"></i></a>
                 </div>
-              
             </div>
   
             <nav>
@@ -59,6 +53,28 @@
 
           </div>
 
+          <div class="mob-container">
+            <img
+              src="/dist/img/icon-burger-menu.png"
+              alt="Menu icon"
+              style="width: 40px;"
+              class="burgermenu"
+            />
+  
+            <div class="mob-nav">
+              <a href="#" class="navbutton">NEW</a>
+              <a href="#" class="navbutton">SALE</a>
+              <a href="#" class="navbutton">ROOMS</a>
+              <a href="#" class="navbutton">INSPIRATION</a>
+              <a href="#" class="navbutton">CONTACT</a>
+              <div id="icons">
+                <a href="#"><i class="fas fa-user icons"></i></a>
+                <a href="#"><i class="fas fa-heart icons"></i></a>
+                <a href="#"><i class="fas fa-shopping-cart icons"></i></a>
+              </div>
+            </div>
+          </div>
+
         </header>
       </div>
     
@@ -77,6 +93,17 @@
           <a href="#" class="herolink-text">View all</a>
           <i class="fas fa-arrow-right fa-2x herolink-icon"></i>
         </div>
+
+        <div class="mob-herolink">
+          <a href="#" class="mob-herolink-text">View products </a>
+          <i class="fas fa-arrow-right fa-2x mob-herolink-icon"></i>
+        </div>
+
+        <div class="nav-box" onclick="location.href='#'">
+          <a href="#" class="nav-box-text" >VIEW PRODUCTS</a>
+            <i class="fas fa-arrow-right fa-2x nav-box-icon"></i>
+        </div>
+
     </section>
 
     <!-- Section 2 -->
@@ -143,18 +170,15 @@
     
 
     <!-- Newsletter -->
-
     <div class="newsletter">
               <!-- <form action="/action_page.php"></form> -->
-                <label for="email">Join our newsletter and enjoy 10% off your first order</label>
+                <label for="email">Join our newsletter<span class="mob-newsletter"> and enjoy 10% off your first order</span></label>
                 <input type="email" id="email" name="email" placeholder="Email Address">
-                <button class="btn-sunscribe">Subscribe</button>
+                <button class="btn-subscribe">Subscribe</button>
               <!-- </form> -->
           </div>
 
-
     <!-- Footer -->
-
     <div class="container-footer">
       <footer>
         <div class="vertical ver1">
@@ -192,16 +216,16 @@
           
         <div class="social">
           <p>FOLLOW US</p>
-          <a href="#"><i class="fab fa-instagram icons fa-2x"></i></a>
-          <a href="#"><i class="fab fa-twitter icons fa-2x"></i></a>
-          <a href="#"><i class="fab fa-facebook icons fa-2x"></i></a>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram icons fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter icons fa-2x"></i></a>
+            <a href="#"><i class="fab fa-facebook icons fa-2x"></i></a>
+          </div>
         </div>
         
       </footer>
     </div>
 
 
-      
-    
   </body>
 </html>
